@@ -6,6 +6,7 @@
     :navigationEnabled="true"
     :paginationEnabled="false"
     :scrollPerPage="false"
+    :loop="true"
   >
     <slide class="slide" v-for="org in orgs" :key="org.name">
         <img :src="`/img/organizations/${org.image}`" />
