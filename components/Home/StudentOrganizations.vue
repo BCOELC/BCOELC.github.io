@@ -9,7 +9,9 @@
             </div>
         </div>
         <div class="col-12 text-center">
+          <no-ssr>
             <org-slider />
+          </no-ssr>
             <nuxt-link to="/organizations" class="btn mosh-btn">Learn More about the Organizations</nuxt-link>
         </div>
     </div>
@@ -19,10 +21,12 @@
 
 <script>
 import OrgSlider from './StudentOrganizationsSlider';
+import NoSSR from 'vue-no-ssr';
 
 export default {
   components: {
-    OrgSlider
+    OrgSlider,
+    'no-ssr': NoSSR
   },
   computed: {}
 };
