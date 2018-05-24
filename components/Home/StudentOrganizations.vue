@@ -5,12 +5,11 @@
         <div class="col-12">
             <div class="section-heading text-center">
                 <h2>Student Organizations</h2>
+                <p>Over 15 member organizations</p>
             </div>
         </div>
-        <div class="col-12 text-center mt-100">
-            
+        <div class="col-12 text-center">
             <org-slider />
-
             <nuxt-link to="/organizations" class="btn mosh-btn">Learn More about the Organizations</nuxt-link>
         </div>
     </div>

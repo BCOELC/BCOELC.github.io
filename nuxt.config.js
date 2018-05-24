@@ -31,6 +31,9 @@ module.exports = {
     '~/assets/css/owl.carousel.min.css',
     '~/assets/css/responsive.css'
   ],
+  router: {
+    linkActiveClass: 'active'
+  },
   /*
   ** Customize the progress bar color
   */

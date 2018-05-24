@@ -7,9 +7,9 @@
                     <div class="menu_area h-100">
                         <nav class="navbar h-100 navbar-expand-lg align-items-center">
     
-                            <a class="navbar-brand" href="index.html">
+                            <nuxt-link class="navbar-brand" to="/">
                                 <img src="~/assets/img/core-img/bcoelc.png" alt="logo">
-                            </a>
+                            </nuxt-link>
     
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mosh-navbar" aria-controls="mosh-navbar" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
@@ -17,21 +17,17 @@
     
                             <div class="collapse navbar-collapse justify-content-end" id="mosh-navbar">
                                 <ul class="navbar-nav animated" id="nav">
-                                    <li class="nav-item active">
-                                        <a class="nav-link" href="index.html">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="about.html">About</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="organizations.html">Organizations</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="services.html">Resources</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="index.html#news">News</a>
-                                    </li>
+                                    <nuxt-link
+                                        v-for="link in links"
+                                        :key="link.name"
+                                        tag="li"
+                                        class="nav-item" 
+                                        :to="link.link" 
+                                        exact
+
+                                    >
+                                        <a class="nav-link">{{ link.name }}</a>
+                                    </nuxt-link>
                                 </ul>
     
                             </div>
@@ -44,7 +40,30 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data: function() {
+    return {
+      links: [
+        {
+          name: 'Home',
+          link: '/'
+        },
+        {
+          name: 'About',
+          link: '/about'
+        },
+        {
+          name: 'Organizations',
+          link: '/organizations'
+        },
+        {
+          name: 'Resources',
+          link: '/resources'
+        }
+      ]
+    };
+  }
+};
 </script>
 
 <style>

@@ -88,6 +88,28 @@ const createStore = () => {
           website: 'http://thetatauucr.com/',
           description: 'WE ARE ENGINEERS. WE ARE LEADERS. WE ARE BROTHERS.'
         }
+      ],
+      events: [
+        {
+          name: 'Citrus Hack',
+          website: 'http://citrushack.com',
+          image: 'citrushack.png'
+        },
+        {
+          name: 'Bourns Engineering Day',
+          website: 'http://www.engr.ucr.edu/~ssed/#/',
+          image: 'bced.png'
+        },
+        {
+          name: 'BioHack',
+          website: 'http://biohackucr.com',
+          image: 'biohack.png'
+        },
+        {
+          name: 'Citrus Hack',
+          website: 'http://cutiehack.com',
+          image: 'cutiehack.png'
+        }
       ]
     },
     mutations: {
