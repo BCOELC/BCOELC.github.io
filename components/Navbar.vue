@@ -1,5 +1,6 @@
 <template>
-    <header class="header_area clearfix">
+    <header class="header_area clearfix" v-on:keyup.enter="easterEgg">
+        <img v-if="showEasterEgg" src="/img/jun.jpg" class="egg" />
         <div class="container-fluid h-100">
             <div class="row h-100">
     
@@ -60,11 +61,34 @@ export default {
           name: 'Resources',
           link: '/resources'
         }
-      ]
+      ],
+      showEasterEgg: false,
+      position: 0,
+      keys: ['b', 'c', 'o', 'e']
     };
+  },
+  methods: {
+    easterEgg(key) {
+      if (this.keys[this.position] === key) {
+        if (this.position == this.keys.length - 1) {
+          this.showEasterEgg = true;
+          this.position = 0;
+          setTimeout(() => {
+            this.showEasterEgg = false;
+          }, 1000);
+        } else {
+          this.position++;
+        }
+      }
+    }
+  },
+  mounted() {
+    window.addEventListener('keypress', e => {
+      this.easterEgg(e.key);
+    });
   }
 };
 </script>
 
-<style>
+<style scoped>
 </style>
