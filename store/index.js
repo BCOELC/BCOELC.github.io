@@ -87,6 +87,48 @@ const createStore = () => {
           image: 'thetatau.png',
           website: 'http://thetatauucr.com/',
           description: 'WE ARE ENGINEERS. WE ARE LEADERS. WE ARE BROTHERS.'
+        },
+        {
+          name: 'Tau Beta Pi',
+          image: 'taubetapi.jpg',
+          website: 'http://tbp.ucr.edu/',
+          description:
+            'Tau Beta Pi is the only engineering honor society representing the entire engineering profession.'
+        },
+        {
+          name: 'Women in Computing (ACM-W)',
+          image: 'winc.jpg',
+          website: 'http://winc.cs.ucr.edu/',
+          description:
+            'Our primary goal is to empower students to increase retention in the computing field.'
+        },
+        {
+          name: 'Material Advantage',
+          image: 'materialadvantage.jpg',
+          website: 'https://www.facebook.com/MaterialAdvantageUCR/',
+          description:
+            'The student program for material science and engineering.'
+        },
+        {
+          name: 'Gamespawn',
+          image: 'gamespawn.jpg',
+          website: 'https://gamespawn.github.io/Home/index.html',
+          description:
+            'We are a game development club. We work with everything game related.'
+        },
+        {
+          name: 'Aerospace Systems',
+          image: 'aerospacesystems.png',
+          website: 'https://aerospacesystems.weebly.com/',
+          description:
+            'Aerospace Systems believes in its ability to change how the University of California Riverside​ and the community perceive space exploration. We dare to push boundaries and consider obstacles as opportunities.'
+        },
+        {
+          name: 'Cyber@UCR',
+          image: 'cyber.png',
+          website: 'http://ucrcyber.org',
+          description:
+            'Cyber@UCR is the advancement of cybersecurity education  through competitions, and study.'
         }
       ],
       events: [
