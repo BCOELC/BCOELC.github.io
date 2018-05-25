@@ -149,7 +149,7 @@ const createStore = () => {
         },
         {
           name: 'Citrus Hack',
-          website: 'http://cutiehack.com',
+          website: '#',
           image: 'cutiehack.png'
         }
       ]

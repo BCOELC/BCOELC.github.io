@@ -11,7 +11,7 @@
 
               <div class="col-12">
                   <div class="clients-logo-area d-sm-flex align-items-center justify-content-between">
-                    <a v-for="event in events" :key="event.name" :href="event.website">
+                    <a v-for="event in events" :key="event.name" :href="event.website" target="_blank">
                       <img :src="`/img/events/${event.image}`" :alt="event.name" />
                     </a>
                   </div>
