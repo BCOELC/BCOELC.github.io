@@ -19,6 +19,7 @@
 
                 <section class="mb-100">
                   <h2>About the BCOE Leadership Council</h2>
+                  <img src="/img/students/students.jpg" style="width: 60%;">
                   <p>
                     Our goal is to continue the excellence that BCOE organizations are known for and to increase collaboration among the organizations.
                   </p>
